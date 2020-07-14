@@ -77,14 +77,15 @@ int main()
         {
         case 1:cout <<"\n Enter Roll No of student whose details U want to see";
                cin>>rno;
-               for( int i=0;i<10;++i)
+                int i;
+               for( i=0;i<10;++i)
                { if (XIIa[i].getRollno()==rno)   //ACCESSOR
                    {
                        XIIa[i].dispStudent();
                        break;
                    }
                }
-            if(int i==10)
+            if( i==10)
                {
                                   cout<<"\n INVALID ROLLNO!!!\n";
                                   break;
